@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Selfie App || All the images</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../assets/camera.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Selfie Application
+        </a>
+        <div class="d-flex">
+          <a class="nav-link text-dark" aria-current="page" href="../index.html"
+            >Upload selfie</a
+          >
+          <a class="nav-link text-dark" href="#">All Selfies</a>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div>
+        <h1 class="py-3 text-center">All the selfies uploaded</h1>
+        <p class="text-center text-muted container-sm mb-5 w-75">
+          In this page ,you will find all the selfies uploaded from the other
+          page. Thanks for watching !!
+        </p>
+        <hr />
+      </div>
+      <section
+        class="container px-5 row justify-content-center"
+        id="selfies"
+      ></section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

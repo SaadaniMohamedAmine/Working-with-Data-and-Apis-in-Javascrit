@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- p5 for taking images cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <!-- Bootstrap 5 cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Selfie App || Upload mood and selfie</title>
+    <style>
+      video {
+        display: block;
+        margin: 10px auto;
+      }
+      #submit {
+        display: block;
+        position: absolute;
+        bottom: 2em;
+        right: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets//camera.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Selfie Application
+        </a>
+        <div class="d-flex">
+          <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-dark" href="./logs/all.html">All Selfies</a>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div>
+        <h1 class="py-3 text-center">The selfie app</h1>
+        <p class="text-center text-muted container-sm mb-5 w-75">
+          In this application,you will send the data containing:
+          coordinates(latitude and longitude),the mood and a captures of
+          yourself. You will find the data available in the page of All selfie
+          by clicking on the link .
+        </p>
+        <hr />
+      </div>
+      <section class="container px-5 w-50 mx-auto">
+        <h3 class="text-primary">Coordinates</h3>
+        <p class="px-3">
+          Latitude: <span class="py-3" id="lat"></span>°<br />
+          Longitude: <span class="py-3" id="long"></span>°
+        </p>
+        <div class="mb-3 row">
+          <h3 class="text-primary">Mood</h3>
+          <label for="mood" class="col-4 col-form-label px-3"
+            >Enter your mood:</label
+          >
+          <div class="col-8">
+            <input type="text" class="form-control" id="mood" />
+          </div>
+        </div>
+
+        <button id="submit" class="btn btn-primary">Submit data</button>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
